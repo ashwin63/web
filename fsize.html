@@ -1,0 +1,54 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+var x=1,i;
+$(document).ready(function(){
+$("td").click(function(){
+var packed=escape(size);
+window.location="cspeed.jsp?tempp="+size;
+});
+});
+</script>
+<script>
+var x=1,i,maxvalue=3,size=1;
+</script>
+<script>
+function func(){
+setInterval(function(){
+if(x==1){
+    
+var temp=maxvalue;
+$("#"+temp).attr("style","background-color: white;font-size: 28px;color: yellow;text-align: center; padding : 15px 32px; ");
+}
+for(i=1;i<x;i++){
+$("#"+i).attr("style","background-color: white;font-size: 28px;color: yellow;text-align: center; padding : 15px 32px; ");
+}
+$("#"+i).attr("style","background-color: red;font-size: 28px;color: yellow;text-align: center; padding : 15px 32px; ");
+size=x;
+x++;
+if (x > maxvalue){
+x=1;
+}
+},3000);
+}
+</script>
+</head>
+<body onload='func()'>
+    
+<table border=1 style="height: 100%;width: 100%; ">
+    <thead><h1><center>Font Size</h1></thead>
+    <tr style="height:100%;width: 100%; font-size: 180px;">
+<td>
+    
+<center>
+<button id="1" style="background-color : white;font-size: 28px; color: yellow;text-align: center; padding : 15px 32px;   ">small</button>
+<button id="2" style="background-color : white;font-size: 28px; color: yellow;text-align: center; padding : 15px 32px;   ">medium</button>
+<button id="3" style="background-color : white;font-size: 28px; color: yellow;text-align: center; padding : 15px 32px;   ">large</button>
+</center>
+</td>
+</tr>
+</table>
+</body>
+</html>

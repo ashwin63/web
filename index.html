@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>  
+    <head>
+<style>
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+.button {
+    background-color: red;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+var x=1,i;
+$(document).ready(function(){
+$("td").click(function(){
+window.location="fsize.html";
+});
+});
+</script>
+    </head>
+<body>
+    
+   <!-- <table border="1" style="height: 100%; width: 100%;">
+    <tr style=" height: 100%; width: 100%; ">
+     <td>
+    <div align="right">
+    
+                <form action="admin"  method="post">
+                <input type="button" class="button" value="ADMIN"> 
+                </form>
+    </div>
+ <div align="center">
+<br><br> <br><br> <br><br> 
+<h1>BILLING SYSTEM</h1>
+<form action="fsize" method="post">
+    <input type="button" class="button" value="START">
+</form>
+</div>
+</td>
+</tr>
+</table>
+    -->
+    
+    <table border=1 style="height: 100%;width: 100%; ">
+    <tr style="height:100%;width: 100%; font-size: 28px;">
+<td>
+    <div align="right">
+    <form action="admin"  method="post">
+                <input type="button" class="button" value="ADMIN"> 
+                </form>
+    </div>
+    <div align="center">
+<br><br> <br><br> <br><br> 
+<h1>BILLING SYSTEM</h1>
+<form action="fsize" method="post">
+    <input type="button" class="button" value="START">
+</form>
+<center><br><br><br><br><br>
+</center>
+</td>
+</tr>
+</table>
+</body>
+</html>
